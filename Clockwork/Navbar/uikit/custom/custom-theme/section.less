@@ -1,0 +1,97 @@
+//
+// Component: Section
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@section-padding-vertical:                        @global-medium-margin;
+@section-padding-vertical-m:                      @global-large-margin;
+
+@section-xsmall-padding-vertical:                 @global-margin;
+
+@section-small-padding-vertical:                  @global-medium-margin;
+
+@section-large-padding-vertical:                  @global-large-margin;
+@section-large-padding-vertical-m:                @global-xlarge-margin;
+
+@section-xlarge-padding-vertical:                 @global-xlarge-margin;
+@section-xlarge-padding-vertical-m:               (@global-large-margin + @global-xlarge-margin);
+
+@section-default-background:                      @global-background;
+
+@section-muted-background:                        @global-muted-background;
+
+@section-primary-background:                      @global-primary-background;
+@section-primary-color-mode:                      light;
+
+@section-secondary-background:                    @global-secondary-background;
+@section-secondary-color-mode:                    light;
+
+
+// Component
+// ========================================================================
+
+.hook-section() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-section-default() {}
+
+.hook-section-muted() {}
+
+.hook-section-primary() {}
+
+.hook-section-secondary() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-section-misc() {
+    //Mobil için CSS
+    .mp-menu {
+        margin-left: 15px;
+        padding: 0;
+    }
+
+    //Büyük cihazlar (laptop, monitör vs) için CSS
+    @media(min-width: @breakpoint-medium){
+
+        .mp-menu {
+            margin-left: 30px;
+            padding: 0;
+        }
+    }
+
+    .weight {
+        font-weight: 600;
+    }
+    
+    .reset-color {
+        color: #000;
+    }
+    
+    .mp-language {
+        margin-left: 30px;
+        padding: 0;
+    }
+    
+    .mp-phone {
+        margin-right: 30px;
+        padding: 0;
+    }
+    
+    .mp-rezervasyon {
+        margin-right: 30px;
+        font-size: 12px;
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}
+
+
