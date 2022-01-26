@@ -17,7 +17,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  background: #eee;
+  background: #ffffff;
   color: #666;
 }
 /*
@@ -399,7 +399,7 @@ pre {
   padding: 10px;
   border: 2px solid #000;
   border-radius: 3px;
-  background: #eee;
+  background: #ffffff;
 }
 pre code {
   font-family: Consolas, monaco, monospace;
@@ -1333,7 +1333,7 @@ button.uk-icon:not(:disabled) {
   height: 15px;
   width: 15px;
   border-radius: 500px;
-  background: #eee;
+  background: #ffffff;
   border: 2px solid #000000;
 }
 /* Firefox */
@@ -1344,7 +1344,7 @@ button.uk-icon:not(:disabled) {
   height: 15px;
   width: 15px;
   border-radius: 500px;
-  background: #eee;
+  background: #ffffff;
   border: 2px solid #000000;
 }
 /* Edge */
@@ -1360,7 +1360,7 @@ button.uk-icon:not(:disabled) {
   height: 15px;
   width: 15px;
   border-radius: 500px;
-  background: #eee;
+  background: #ffffff;
   border: 2px solid #000000;
 }
 /* Edge + IE11 */
@@ -2019,11 +2019,11 @@ select.uk-form-width-xsmall {
   /* 7 */
   display: inline-block;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 40px;
   vertical-align: middle;
   font-size: 14px;
   /* 8 */
-  line-height: 40px;
+  line-height: 50px;
   /* 9 */
   text-align: center;
   /* 10 */
@@ -2054,20 +2054,20 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-button-default {
-  background-color: #f8f8f8;
-  color: #333;
-  border: 2px solid #000;
+  background-color: #194488;
+  color: #ffffff;
+  border: 2px solid none;
 }
 /* Hover */
 .uk-button-default:hover {
-  background-color: #ebebeb;
-  color: #333;
+  background-color: #153972;
+  color: #fff;
   border-color: #000000;
 }
 /* OnClick + Active */
 .uk-button-default:active,
 .uk-button-default.uk-active {
-  background-color: #dfdfdf;
+  background-color: #112e5d;
   color: #333;
   border-color: #000000;
 }
@@ -2075,19 +2075,19 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
+  background-color: #194488;
   color: #fff;
   border: 2px solid transparent;
 }
 /* Hover */
 .uk-button-primary:hover {
-  background-color: #0f7ae5;
+  background-color: #153972;
   color: #fff;
 }
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #0e6dcd;
+  background-color: #112e5d;
   color: #fff;
 }
 /*
@@ -2397,7 +2397,7 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-section-default {
-  background: #eee;
+  background: #ffffff;
 }
 /*
  * Muted
@@ -2471,6 +2471,20 @@ select.uk-form-width-xsmall {
 }
 .card-margin {
   margin-top: 100px;
+}
+.modalheader {
+  color: #fff;
+}
+.ghost {
+  background-color: #f8f8f8;
+  color: #194488;
+  border: 2px solid #194488;
+}
+.inmodalbutton {
+  line-height: 35px;
+}
+#closecolor {
+  color: #fff;
 }
 /* ========================================================================
    Component: Container
@@ -2704,7 +2718,7 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-tile-default {
-  background-color: #eee;
+  background-color: #ffffff;
 }
 /*
  * Muted
@@ -3275,7 +3289,7 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-overlay-default {
-  background: rgba(238, 238, 238, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 /*
  * Primary
@@ -3863,7 +3877,7 @@ select.uk-form-width-xsmall {
   /* 3 */
   max-width: calc(100% - 0.01px) !important;
   /* 4 */
-  background: #eee;
+  background: #ffffff;
   /* 5 */
   opacity: 0;
   transform: translateY(-100px);
@@ -3907,19 +3921,19 @@ select.uk-form-width-xsmall {
  ========================================================================== */
 .uk-modal-body {
   display: flow-root;
-  padding: 30px 30px;
+  padding: 60px 30px;
 }
 .uk-modal-header {
   display: flow-root;
   padding: 15px 30px;
-  background: #f8f8f8;
-  border-bottom: 2px solid #000;
+  background: #194488;
+  border-bottom: 2px solid none;
 }
 .uk-modal-footer {
   display: flow-root;
-  padding: 15px 30px;
+  padding: 25px 30px;
   background: #f8f8f8;
-  border-top: 2px solid #000;
+  border-top: 2px solid none;
 }
 /*
  * Remove margin from the last-child
@@ -3986,7 +4000,7 @@ select.uk-form-width-xsmall {
   top: 0;
   right: 0;
   padding: 20px;
-  background: #eee;
+  background: #ffffff;
 }
 /* ========================================================================
    Component: Slideshow
@@ -5239,7 +5253,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  background: #ffffff;
 }
 /*
  * Remove pseudo elements created by micro clearfix as precaution (if Container component is used)
@@ -6119,7 +6133,7 @@ ul.uk-nav-sub {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(238, 238, 238, 0.4);
+  background: rgba(255, 255, 255, 0.4);
   transition: background-color 0.1s ease-in-out;
 }
 /* Hover */
@@ -7502,7 +7516,7 @@ iframe.uk-cover {
 /* Color
  ========================================================================== */
 .uk-background-default {
-  background-color: #eee;
+  background-color: #ffffff;
 }
 .uk-background-muted {
   background-color: #f8f8f8;
