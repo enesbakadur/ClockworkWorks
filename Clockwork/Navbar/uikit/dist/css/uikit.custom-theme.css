@@ -2486,6 +2486,25 @@ select.uk-form-width-xsmall {
 #closecolor {
   color: #fff;
 }
+.eb-pad {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.ofc-button {
+  line-height: 40px;
+  background-color: #e4e4e4;
+  color: #000;
+  font-weight: 600;
+  padding-right: 15px;
+  margin-right: 50px;
+}
+.bg {
+  background-color: #f8f8f8;
+}
+.modal-pad {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
 /* ========================================================================
    Component: Container
  ========================================================================== */
@@ -4197,7 +4216,7 @@ select.uk-form-width-xsmall {
   box-sizing: border-box;
   width: 270px;
   padding: 20px 20px;
-  background: #222;
+  background: #194488;
   /* 3 */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -5859,7 +5878,7 @@ ul.uk-nav-sub {
   bottom: 0;
   left: 20px;
   right: 0;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid 2px solid #f8f8f8;
 }
 /*
  * 1. Space is allocated solely based on content dimensions: 0 0 auto
@@ -5906,8 +5925,8 @@ ul.uk-nav-sub {
 }
 /* Active */
 .uk-tab > .uk-active > a {
-  color: #333;
-  border-color: #1e87f0;
+  color: #194488;
+  border-color: #194488;
 }
 /* Disabled */
 .uk-tab > .uk-disabled > a {
@@ -5946,7 +5965,7 @@ ul.uk-nav-sub {
   bottom: 0;
   left: auto;
   right: 0;
-  border-left: 2px solid #000;
+  border-left: 2px solid 2px solid #f8f8f8;
   border-bottom: none;
 }
 .uk-tab-right::before {
@@ -5954,7 +5973,7 @@ ul.uk-nav-sub {
   bottom: 0;
   left: 0;
   right: auto;
-  border-left: 2px solid #000;
+  border-left: 2px solid 2px solid #f8f8f8;
   border-bottom: none;
 }
 .uk-tab-left > * > a {
