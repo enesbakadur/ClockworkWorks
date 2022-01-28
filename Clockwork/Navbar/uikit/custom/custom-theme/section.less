@@ -54,21 +54,21 @@
 
 .hook-section-misc() {
     //Mobil için CSS
-    .mp-menu {
-        margin-left: 15px;
-        padding: 0;
+    .navbar-mobile-padding {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     //Büyük cihazlar (laptop, monitör vs) için CSS
     @media(min-width: @breakpoint-medium){
 
-        .mp-menu {
-            margin-left: 30px;
-            padding: 0;
+        .navbar-mobile-padding {
+            padding-left: 30px !important;
+            padding-right: 0 !important;
         }
     }
 
-    .weight {
+    .font-weight-600 {
         font-weight: 600;
     }
     
@@ -76,22 +76,20 @@
         color: #000;
     }
     
-    .mp-language {
-        margin-left: 30px;
-        padding: 0;
-    }
-    
-    .mp-phone {
-        margin-right: 30px;
-        padding: 0;
-    }
-    
-    .mp-rezervasyon {
-        margin-right: 30px;
+    .reservation-button {
         font-size: 12px;
-        padding-right: 14px;
-        padding-left: 14px;
+        padding-right: 25px;
+        padding-left: 25px;
+        background-color: #fff;
+        color: #000;
+        border: 2px solid #000;
+
     }
+
+    .reservation-button:hover {
+        background-color: #f8f8f8;
+        color: #000;
+      }
 
     .title-prop {
         font-weight: 700;
@@ -148,13 +146,29 @@
         margin-right: 50px;
     }
 
-    .bg {
+    .section-background-color {
         background-color: #f8f8f8;
     }
 
     .modal-pad {
         padding-top: 50px !important;
         padding-bottom: 50px !important;
+    }
+
+    .slider-content-margin {
+        margin-bottom: 250px;
+    }
+
+    .slider-header-prop {
+        font-weight: 800;
+        color: #fff;    
+        margin-bottom: 5px;  
+    }
+
+    .slider-title-prop {
+        margin-top: 5px;
+        font-weight: 400;
+        color: #fff;
     }
 
 }

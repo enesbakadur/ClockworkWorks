@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "uikit": "^3.10.1",
+    "watch": "^1.0.2"
+  }
+}
