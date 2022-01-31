@@ -490,7 +490,7 @@ template {
  ========================================================================== */
 a.uk-link-muted,
 .uk-link-muted a {
-  color: #999;
+  color: #000;
 }
 a.uk-link-muted:hover,
 .uk-link-muted a:hover,
@@ -2435,9 +2435,6 @@ select.uk-form-width-xsmall {
 }
 .font-weight-600 {
   font-weight: 600;
-}
-.reset-color {
-  color: #000;
 }
 .reservation-button {
   font-size: 12px;
@@ -5601,6 +5598,9 @@ ul.uk-nav-sub {
   left: 0;
   right: 0;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.05);
+}
+.navbar-animation-background {
+  background-color: #fff;
 }
 /*
      * Navbar
@@ -11382,7 +11382,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-navbar-nav > li > a,
 .uk-overlay-primary .uk-navbar-nav > li > a,
 .uk-offcanvas-bar .uk-navbar-nav > li > a {
-  color: #000000;
+  color: #fff;
 }
 .uk-light .uk-navbar-nav > li:hover > a,
 .uk-light .uk-navbar-nav > li > a[aria-expanded="true"],
@@ -11445,7 +11445,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-navbar-item,
 .uk-overlay-primary .uk-navbar-item,
 .uk-offcanvas-bar .uk-navbar-item {
-  color: #000000;
+  color: #fff !important;
 }
 .uk-light .uk-navbar-toggle,
 .uk-section-primary:not(.uk-preserve-color) .uk-navbar-toggle,
@@ -11458,7 +11458,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-navbar-toggle,
 .uk-overlay-primary .uk-navbar-toggle,
 .uk-offcanvas-bar .uk-navbar-toggle {
-  color: #000;
+  color: #fff;
 }
 .uk-light .uk-navbar-toggle:hover,
 .uk-light .uk-navbar-toggle[aria-expanded="true"],
