@@ -2513,6 +2513,9 @@ select.uk-form-width-xsmall {
   font-weight: 400;
   color: #fff;
 }
+.about-us-div-padding {
+  padding-bottom: 20px;
+}
 /* ========================================================================
    Component: Container
  ========================================================================== */
@@ -5735,21 +5738,21 @@ ul.uk-nav-sub {
 .uk-subnav-pill > * > :first-child {
   padding: 5px 10px;
   background: transparent;
-  color: #999;
+  color: #000;
 }
 /* Hover */
 .uk-subnav-pill > * > a:hover {
-  background-color: #f8f8f8;
-  color: #666;
+  background-color: #194488;
+  color: #fff;
 }
 /* OnClick */
 .uk-subnav-pill > * > a:active {
-  background-color: #f8f8f8;
-  color: #666;
+  background-color: #194488;
+  color: #fff;
 }
 /* Active */
 .uk-subnav-pill > .uk-active > a {
-  background-color: #1e87f0;
+  background-color: #194488;
   color: #fff;
 }
 /* Disabled
@@ -7994,7 +7997,7 @@ iframe.uk-cover {
   border-radius: 500px;
 }
 .uk-border-rounded {
-  border-radius: 5px;
+  border-radius: 30px;
 }
 /*
  * Fix `overflow: hidden` to be ignored with border-radius and CSS transforms in Webkit

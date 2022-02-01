@@ -14,17 +14,44 @@
 
 <body>
     <header uk-sticky="animation: uk-animation-slide-top; top: 100px; sel-target: .target; cls-active: navbar-animation-background uk-navbar-sticky; cls-inactive: uk-light" class="uk-sticky">
-        <div class="target uk-position-top uk-position-z-index active-navbar-background uk-light">
+        <div class="target uk-position-top uk-position-z-index active-navbar-background">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
-                <div class="uk-navbar-left navbar-special-padding">
+                <div class="uk-navbar-left navbar-special-padding ">
             
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="index.html" class="enesbakadur-font-size uk-text-bold uk-visible@m">ENES BAKADUR</a>
+                            <a href="index.html" class="enesbakadur-font-size uk-text-bold uk-visible@m gradient-text-background">ENES BAKADUR</a>
                         </li>
-                        <li>
-                            <a class="uk-navbar-toggle uk-hidden@m  navbar-special-padding" uk-navbar-toggle-icon href="#"></a>
+                        <li class="uk-hidden@m">
+                            <a class="uk-navbar-toggle  navbar-special-padding" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-nav-primary"></a>
+
+                            <!--Off-Canvas-->
+                            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                                    <div class="uk-offcanvas-bar">
+
+                                            <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
+
+                                        <div class="uk-height-1-1 uk-flex uk-flex-column">
+                                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                                <li>
+                                                    <a class="uk-text-bold" href="#">ANA SAYFA</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-text-bold" href="#">BEN KİMİM?</a>
+                                                </li>
+                                                <li>
+                                                    <a class="uk-text-bold" href="#">İŞLERİM</a>
+                                                </li>
+                                                <li class="uk-padding-small">
+                                                    <button class="uk-button uk-button-default uk-text-bold gradient-button-background">TEKLİF AL</button>
+                                                </li>                                               
+                                            </ul>
+                                        </div>
+
+                                        
+                                    </div>
+                            </div>
                         </li> 
                         
                     </ul>
@@ -38,7 +65,7 @@
                         <li><a href="#" class="uk-text-bold uk-visible@m uk-padding-remove-right">İŞLERİM</a></li>
                         <div class="uk-navbar-item navbar-offer-padding">
                             <form action="javascript:void(0)">
-                                <button class="uk-button uk-button-default uk-text-bold offer-button">TEKLİF AL</button>
+                                <button class="uk-button uk-button-default uk-text-bold offer-button gradient-button-background">TEKLİF AL</button>
                             </form>
                         </div>
                     </ul>
@@ -53,38 +80,93 @@
     <main>
 
         <section class="uk-position-relative uk-overflow-hidden" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);">
-            <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-img>
+            <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);" uk-img>
             <div class="uk-position-cover">
-                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-flex uk-flex-middle">
-                    <div class="uk-grid-collapse uk-child-width-1-1@m uk-width-1-1 text-padding" uk-grid>
-                        <h3 class="home-item-padding">Hoş geldin! Ben,</h3>
-                        <h1 class="uk-text-bold home-item-padding">ENES BAKADUR</h1>
-                        <h3 class="home-item-padding">Front-End Developer, Grafik Tasarımcı</h3>
+                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large container-extra-padding uk-flex uk-flex-middle uk-flex-center uk-visible@m">
+                    <div class="uk-grid uk-margin-remove uk-flex" uk-grid>
+                        <div class="uk-container uk-height-1-1">
+                            <div class="uk-grid-large uk-width-1-1@m uk-flex uk-flex-middle">
+                                <div class="uk-child-width-1-1@m uk-width-5-12@m text-padding uk-light uk-text-right">
+                                    <h3 class="home-item-margin-padding">Hoş geldin! Ben,</h3>
+                                    <h1 class="uk-text-bold home-item-margin-padding gradient-text-background">ENES BAKADUR</h1>
+                                    <h3 class="home-item-margin-padding">Front-End Developer, Grafik Tasarımcı</h3>
+                                    <div class="home-offer-padding">
+                                        <button class="uk-button uk-button-default uk-text-bold gradient-button-background">TEKLİF AL</button>
+                                    </div>
+                                </div>
+                                <div class="uk-width-7-12@m uk-visible@m uk-flex uk-flex-middle">
+                                    <img src="/assets/images/enesbakadur.png" alt="enesbakadur">
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large uk-flex uk-flex-middle uk-hidden@m">
+                    <div class="uk-grid uk-width-1-1 uk-margin-remove" uk-grid>
+                        <div class="uk-width-1-1@m uk-flex uk-flex-middle uk-padding-remove">
+                            <div class="uk-child-width-1-1@m uk-width-1-1@m text-padding uk-light uk-text-center uk-padding-remove">
+                                <h3 class="home-item-margin-padding">Hoş geldin! Ben,</h3>
+                                <h1 class="uk-text-bold home-item-margin-padding gradient-text-background">ENES BAKADUR</h1>
+                                <h3 class="home-item-margin-padding">Front-End Developer, Grafik Tasarımcı</h3>
+                                <div class="home-offer-padding">
+                                    <button class="uk-button uk-button-default uk-text-bold gradient-button-background">TEKLİF AL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Orijinal-->
+        <div class="uk-container uk-container-xlarge uk-height-1-1 uk-flex uk-flex-middle">
+            <div class="uk-grid-collapse uk-child-width-1-1@m uk-width-1-1 text-padding uk-light" uk-grid>
+                <h3 class="home-item-padding">Hoş geldin! Ben,</h3>
+                <h1 class="uk-text-bold home-item-padding">ENES BAKADUR</h1>
+                <h3 class="home-item-padding">Front-End Developer, Grafik Tasarımcı</h3>
+                <div class="home-offer-padding">
+                    <button class="uk-button uk-button-default uk-text-bold">TEKLİF AL</button>
+                </div>
+            </div>
+            <div class="uk-grid-collapse uk-width-2-3@m uk-flex uk-flex-right uk-visible@m" uk-grid>
+                <img src="/assets/images/enesbakadur.png" alt="">
+            </div>  
+        </div>
+
+        <!--Versiyon 2-->
+        <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large container-extra-padding uk-flex uk-flex-middle uk-visible@m">
+            <div class="uk-grid uk-margin-remove" uk-grid>
+                <div class="uk-grid-large uk-width-1-1@m uk-flex uk-flex-middle">
+                    <div class="uk-child-width-1-1@m uk-width-3-5@m text-padding uk-light uk-text-right">
+                        <h3 class="home-item-margin-padding">Hoş geldin! Ben,</h3>
+                        <h1 class="uk-text-bold home-item-margin-padding">ENES BAKADUR</h1>
+                        <h3 class="home-item-margin-padding">Front-End Developer, Grafik Tasarımcı</h3>
                         <div class="home-offer-padding">
                             <button class="uk-button uk-button-default uk-text-bold">TEKLİF AL</button>
                         </div>
                     </div>
-                    <div class="uk-grid-collapse uk-width-2-3@m uk-flex uk-flex-right uk-visible@m" uk-grid>
-                        <img src="/assets/images/enesbakadur.png" alt="">
-                    </div>  
+                    <div class="uk-width-3-5@m uk-visible@m uk-flex uk-flex-middle">
+                        <img src="/assets/images/enesbakadur.png" alt="enesbakadur">
+                    </div> 
                 </div>
             </div>
-        </section>
-        <section class="uk-position-relative" uk-height-viewport="offset-top: true;" style="min-height: calc(100vh);">
-            <div class="uk-container uk-container-xlarge uk-flex uk-flex-middle uk-padding-remove" uk-height-viewport="offset-top: true;">
-                <div class="uk-grid-collapse uk-child-width-1-1@m uk-width-1-1 text-padding" uk-grid>
-                    <h3 class="home-item-padding">Hoş geldin! Ben,</h3>
-                    <h1 class="uk-text-bold home-item-padding">ENES BAKADUR</h1>
-                    <h3 class="home-item-padding">Front-End Developer, Grafik Tasarımcı</h3>
-                    <div class="home-offer-padding">
-                        <button class="uk-button uk-button-default uk-text-bold">TEKLİF AL</button>
+        </div>
+        <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large uk-flex uk-flex-middle uk-hidden@m">
+            <div class="uk-grid uk-width-1-1 uk-margin-remove" uk-grid>
+                <div class="uk-width-1-1@m uk-flex uk-flex-middle uk-padding-remove">
+                    <div class="uk-child-width-1-1@m uk-width-1-1@m text-padding uk-light uk-text-center uk-padding-remove">
+                        <h3 class="home-item-margin-padding">Hoş geldin! Ben,</h3>
+                        <h1 class="uk-text-bold home-item-margin-padding">ENES BAKADUR</h1>
+                        <h3 class="home-item-margin-padding">Front-End Developer, Grafik Tasarımcı</h3>
+                        <div class="home-offer-padding">
+                            <button class="uk-button uk-button-default uk-text-bold">TEKLİF AL</button>
+                        </div>
                     </div>
                 </div>
-                <div class="uk-grid-collapse uk-width-2-3@m uk-flex uk-flex-right uk-visible@m" uk-grid>
-                    <img src="/assets/images/enesbakadur.png" alt="">
-                </div>  
             </div>
-        </section>
+        </div>
+        
     </main>
     <footer>
     </footer>
