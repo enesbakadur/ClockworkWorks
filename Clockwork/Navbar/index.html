@@ -9,139 +9,169 @@
     <link rel="stylesheet" href="uikit/dist/css/uikit.custom-theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header uk-sticky="animation: uk-animation-slide-top; top: 100px; sel-target: .target; cls-active: navbar-animation-background uk-navbar-sticky;" class="uk-sticky"> 
+    <header
+        uk-sticky="animation: uk-animation-slide-top; top: 100px; sel-target: .target; cls-active: navbar-animation-background uk-navbar-sticky;"
+        class="uk-sticky">
         <div class="target uk-position-top uk-position-z-index active-navbar-background">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-toggle navbar-mobile-padding" href="#">
-                        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-visible@m font-weight-600">Menü</span>
+                        <span uk-navbar-toggle-icon></span> <span
+                            class="uk-margin-small-left uk-visible@m font-weight-600">Menü</span>
                     </a>
                     <a class="uk-navbar-item uk-link-reset uk-visible@m" href="#">
-                        <span class="uk-margin-small-left font-weight-600 reset-color">TR</span><span uk-icon="icon: chevron-down"></span>
+                        <span class="uk-margin-small-left font-weight-600 reset-color">TR</span><span
+                            uk-icon="icon: chevron-down"></span>
                     </a>
                 </div>
-    
+
                 <div class="uk-navbar-center">
-                    <img src="./assets/images/zeynephotellogo.svg" alt="zeynephotellogo"/>
+                    <img src="./assets/images/zeynephotellogo.svg" alt="zeynephotellogo" />
                 </div>
-    
+
                 <div class="uk-navbar-right">
                     <a class="uk-navbar-item uk-visible@m " href="#">
-                        <a class="uk-button uk-button-default  uk-visible@m font-weight-600 reservation-button" href="#">REZERVASYON</a>
+                        <a class="uk-button uk-button-default  uk-visible@m font-weight-600 reservation-button"
+                            href="#">REZERVASYON</a>
                     </a>
                     <a class="uk-navbar-item uk-visible@m uk-link-reset" href="tel:+904446338">
-                        <span uk-icon="icon: receiver"></span><span class="uk-margin-small-right font-weight-600">+90 444 63 38</span>
+                        <span uk-icon="icon: receiver"></span><span class="uk-margin-small-right font-weight-600">+90
+                            444 63 38</span>
                     </a>
                     <a class="uk-navbar-item uk-link-reset uk-hidden@m navbar-mobile-padding" href="#">
-                        <span class="uk-margin-small-left font-weight-600">TR</span><span uk-icon="icon: chevron-down"></span>
-                    </a>                        
-                </div>            
+                        <span class="uk-margin-small-left font-weight-600">TR</span><span
+                            uk-icon="icon: chevron-down"></span>
+                    </a>
+                </div>
             </nav>
         </div>
-        
+
     </header>
     <main>
         <!--Cards-->
         <section class="uk-section">
             <div class="uk-container">
-                <h3 class="uk-text-center h-title">Çocuklar İçin Etkinliklerimiz</h3>
-                <div class="uk-grid-small uk-child-width-1-3@m uk-text-center" uk-grid>
-                    <div>
-                        <div class="uk-card uk-text-left">
+                <div>
+                    <h3 class="uk-text-center uk-text-bold uk-margin-remove uk-padding-large">Çocuklar İçin
+                        Etkinliklerimiz</h3>
+                </div>
+                <div class="uk-grid-small uk-child-width-1-3@m uk-text-center"
+                    uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500; repeat: true;" uk-grid>
+                    <div uk-scrollspy-class="uk-animation-slide-left">
+                        <div class="uk-card uk-text-left" uk-scrollspy-class="uk-animation-slide-top">
                             <div class="uk-card-media-top">
                                 <img src="./assets/images/image10.png" alt="">
                             </div>
-                            <h3 class="uk-card-title title-prop">Kurabiye, pizza, tuzlu hamur, barbekü, ekmek yapımı:</h3>
-                            <p class="card-text-prop">Çocukların el becerileri ve hayal gücünü şekillere yansıtmasını amaçlıyoruz.</p>
+                            <h3 class="uk-card-title title-prop">Kurabiye, pizza, tuzlu hamur, barbekü, ekmek yapımı:
+                            </h3>
+                            <p class="card-text-prop">Çocukların el becerileri ve hayal gücünü şekillere yansıtmasını
+                                amaçlıyoruz.</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="uk-card uk-text-left">
+                    <div uk-scrollspy-class="uk-animation-slide-top">
+                        <div class="uk-card uk-text-left" uk-scrollspy-class="uk-animation-slide-top">
                             <div class="uk-card-media-top">
                                 <img src="./assets/images/image11.png" alt="">
                             </div>
                             <h3 class="uk-card-title title-prop">Sanat Atölyesi</h3>
-                            <p class="card-text-prop">Çocukların kendilerini ifade edebilme becerisini geliştirirken aynı zamanda hayal etme ve bu hayali somut şekilde ifade edebilme, özgüven, ince motor, odaklanma, yaratıcı düşünebilme gibi becerilerini de geliştirmesine yardımcı oluyoruz. </p>
+                            <p class="card-text-prop">Çocukların kendilerini ifade edebilme becerisini geliştirirken
+                                aynı zamanda hayal etme ve bu hayali somut şekilde ifade edebilme, özgüven, ince motor,
+                                odaklanma, yaratıcı düşünebilme gibi becerilerini de geliştirmesine yardımcı oluyoruz.
+                            </p>
                         </div>
                     </div>
-                    <div>
-                        <div class="uk-card uk-text-left">
+                    <div uk-scrollspy-class="uk-animation-slide-right">
+                        <div class="uk-card uk-text-left" uk-scrollspy-class="uk-animation-slide-top">
                             <div class="uk-card-media-top">
                                 <img src="./assets/images/image12.png" alt="">
                             </div>
                             <h3 class="uk-card-title title-prop">Turnuva</h3>
-                            <p class="card-text-prop">Oyun, çocuğun zihinsel, bedensel ve sosyal gelişimini hızlandıran en önemli faaliyetlerden birisidir. Turnuvalar düzenleyerek katkı sağlamaya çalışıyoruz.</p>
+                            <p class="card-text-prop">Oyun, çocuğun zihinsel, bedensel ve sosyal gelişimini hızlandıran
+                                en önemli faaliyetlerden birisidir. Turnuvalar düzenleyerek katkı sağlamaya çalışıyoruz.
+                            </p>
                         </div>
                     </div>
-                    <div>
-                        <div class="uk-card uk-text-left">
+                    <div uk-scrollspy-class="uk-animation-slide-left">
+                        <div class="uk-card uk-text-left" uk-scrollspy-class="uk-animation-slide-bottom">
                             <div class="uk-card-media-top">
                                 <img src="./assets/images/image10.png" alt="">
                             </div>
                             <h3 class="uk-card-title title-prop">Kokulu Taş</h3>
-                            <p class="card-text-prop">Çocuğun nesneyi kullanma koordinasyonunu ve becerisini geliştirmeyi, bununla birlikte çocuklarda dikkati yoğunlaştırmayı öğretiyoruz. </p>
+                            <p class="card-text-prop">Çocuğun nesneyi kullanma koordinasyonunu ve becerisini
+                                geliştirmeyi, bununla birlikte çocuklarda dikkati yoğunlaştırmayı öğretiyoruz. </p>
                         </div>
                     </div>
-                    <div>
-                        <div class="uk-card uk-text-left">
+                    <div uk-scrollspy-class="uk-animation-slide-bottom">
+                        <div class="uk-card uk-text-left" uk-scrollspy-class="uk-animation-slide-bottom">
                             <div class="uk-card-media-top">
                                 <img src="./assets/images/image11.png" alt="">
                             </div>
                             <h3 class="uk-card-title title-prop">Piknik</h3>
-                            <p class="card-text-prop">Çocukların birbirleriyle sosyalleşmesi, yardımlaşması ve paylaşmasını sağlamak amacı ile piknik organizasyonu yapıyoruz.</p>
+                            <p class="card-text-prop">Çocukların birbirleriyle sosyalleşmesi, yardımlaşması ve
+                                paylaşmasını sağlamak amacı ile piknik organizasyonu yapıyoruz.</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="uk-card uk-text-left">
+                    <div uk-scrollspy-class="uk-animation-slide-right">
+                        <div class="uk-card uk-text-left" uk-scrollspy-class="uk-animation-slide-bottom">
                             <div class="uk-card-media-top">
                                 <img src="./assets/images/image12.png" alt="">
                             </div>
                             <h3 class="uk-card-title title-prop">Seramik Şekillendirme</h3>
-                            <p class="card-text-prop">Çocuklar, seramik hamurlarını ellerinde şekillendirirken, kendileriyle başbaşa kalacaklar ve konsantre olarak kendi iş dünyalarında keşfe çıkacaklardır. Tecrübeli ekibimiz ile çocukların kendi iş dünyalarıı keşfetmelerine katkı sağlıyoruz. </p>
+                            <p class="card-text-prop">Çocuklar, seramik hamurlarını ellerinde şekillendirirken,
+                                kendileriyle başbaşa kalacaklar ve konsantre olarak kendi iş dünyalarında keşfe
+                                çıkacaklardır. Tecrübeli ekibimiz ile çocukların kendi iş dünyalarıı keşfetmelerine
+                                katkı sağlıyoruz. </p>
                         </div>
-                    </div>         
+                    </div>
                 </div>
-                    
-                
+
+
             </div>
         </section>
 
         <!--Accordion-->
         <section class="uk-section section-background-color">
             <div class="uk-container">
-                <ul uk-accordion>
-                    <li>
+                <ul uk-accordion uk-scrollspy="target: > li; cls: uk-animation-fade; delay: 500; repeat: true;">
+                    <li uk-scrollspy-class="uk-animation-slide-bottom">
                         <a class="uk-accordion-title font-weight-600" href="#">Kokulu Taş</a>
                         <div class="uk-accordion-content">
-                            <p>Çocuğun nesneyi kullanma koordinasyonunu ve becerisini geliştirmeyi, bununla birlikte çocuklarda dikkati yoğunlaştırmayı öğretiyoruz.</p>
+                            <p>Çocuğun nesneyi kullanma koordinasyonunu ve becerisini geliştirmeyi, bununla birlikte
+                                çocuklarda dikkati yoğunlaştırmayı öğretiyoruz.</p>
                         </div>
                     </li>
-                    <li class="uk-open">
+                    <li class="uk-open" uk-scrollspy-class="uk-animation-slide-bottom">
                         <a class="uk-accordion-title font-weight-600" href="#">Piknik</a>
                         <div class="uk-accordion-content">
-                            <p>Çocukların birbirleriyle sosyalleşmesi, yardımlaşması ve paylaşmasını sağlamak amacı ile piknik organizasyonu yapıyoruz.</p>
+                            <p>Çocukların birbirleriyle sosyalleşmesi, yardımlaşması ve paylaşmasını sağlamak amacı ile
+                                piknik organizasyonu yapıyoruz.</p>
                         </div>
                     </li>
-                    <li>
+                    <li uk-scrollspy-class="uk-animation-slide-bottom">
                         <a class="uk-accordion-title font-weight-600" href="#">Seramik Şekillendirme</a>
                         <div class="uk-accordion-content">
-                            <p>Çocuklar, seramik hamurlarını ellerinde şekillendirirken, kendileriyle başbaşa kalacaklar ve konsantre olarak kendi iş dünyalarında keşfe çıkacaklardır. Tecrübeli ekibimiz ile çocukların kendi iş dünyalarıı keşfetmelerine katkı sağlıyoruz.</p>
+                            <p>Çocuklar, seramik hamurlarını ellerinde şekillendirirken, kendileriyle başbaşa kalacaklar
+                                ve konsantre olarak kendi iş dünyalarında keşfe çıkacaklardır. Tecrübeli ekibimiz ile
+                                çocukların kendi iş dünyalarıı keşfetmelerine katkı sağlıyoruz.</p>
                         </div>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </section>
 
         <!--Modal-->
-        <section class="uk-section modal-pad">
+        <section class="uk-section modal-pad" uk-scrollspy="cls:uk-animation-fade; repeat: true;">
             <div class="uk-container">
                 <div class="uk-grid-small uk-child-width-expand@m uk-text-center" uk-grid>
                     <p uk-margin>
-                        <a class="uk-button uk-button-default font-weight-600" href="#modal-group-1" uk-toggle>İncele</a>
+                        <a class="uk-button uk-button-default font-weight-600" href="#modal-group-1"
+                            uk-toggle>İncele</a>
                     </p>
                     <div id="modal-group-1" uk-modal>
                         <div class="uk-modal-dialog">
@@ -150,11 +180,14 @@
                                 <h2 class="uk-modal-title modalheader">Kokulu Taş</h2>
                             </div>
                             <div class="uk-modal-body">
-                                <p>Çocuğun nesneyi kullanma koordinasyonunu ve becerisini geliştirmeyi, bununla birlikte çocuklarda dikkati yoğunlaştırmayı öğretiyoruz.</p>
+                                <p>Çocuğun nesneyi kullanma koordinasyonunu ve becerisini geliştirmeyi, bununla birlikte
+                                    çocuklarda dikkati yoğunlaştırmayı öğretiyoruz.</p>
                             </div>
                             <div class="uk-modal-footer uk-text-right">
-                                <button class="uk-button uk-button-default uk-modal-close ghost inmodalbutton" type="button">Vazgeç</button>
-                                <a href="#modal-group-2" class="uk-button uk-button-primary inmodalbutton" uk-toggle>Sonraki</a>
+                                <button class="uk-button uk-button-default uk-modal-close ghost inmodalbutton"
+                                    type="button">Vazgeç</button>
+                                <a href="#modal-group-2" class="uk-button uk-button-primary inmodalbutton"
+                                    uk-toggle>Sonraki</a>
                             </div>
                         </div>
                     </div>
@@ -165,12 +198,16 @@
                                 <h2 class="uk-modal-title modalheader">Piknik</h2>
                             </div>
                             <div class="uk-modal-body">
-                                <p>Çocukların birbirleriyle sosyalleşmesi, yardımlaşması ve paylaşmasını sağlamak amacı ile piknik organizasyonu yapıyoruz.</p>
+                                <p>Çocukların birbirleriyle sosyalleşmesi, yardımlaşması ve paylaşmasını sağlamak amacı
+                                    ile piknik organizasyonu yapıyoruz.</p>
                             </div>
                             <div class="uk-modal-footer uk-text-right">
-                                <button class="uk-button uk-button-default uk-modal-close ghost inmodalbutton" type="button">Vazgeç</button>
-                                <a href="#modal-group-1" class="uk-button uk-button-primary inmodalbutton" uk-toggle>Önceki</a>
-                                <a href="#modal-group-3" class="uk-button uk-button-primary inmodalbutton" uk-toggle>Sonraki</a>
+                                <button class="uk-button uk-button-default uk-modal-close ghost inmodalbutton"
+                                    type="button">Vazgeç</button>
+                                <a href="#modal-group-1" class="uk-button uk-button-primary inmodalbutton"
+                                    uk-toggle>Önceki</a>
+                                <a href="#modal-group-3" class="uk-button uk-button-primary inmodalbutton"
+                                    uk-toggle>Sonraki</a>
                             </div>
                         </div>
                     </div>
@@ -181,12 +218,17 @@
                                 <h2 class="uk-modal-title modalheader">Seramik Şekillendirme</h2>
                             </div>
                             <div class="uk-modal-body">
-                                <p>Çocuklar, seramik hamurlarını ellerinde şekillendirirken, kendileriyle başbaşa kalacaklar ve konsantre olarak kendi iş dünyalarında keşfe çıkacaklardır. Tecrübeli ekibimiz ile çocukların kendi iş dünyalarıı keşfetmelerine katkı sağlıyoruz.</p>
+                                <p>Çocuklar, seramik hamurlarını ellerinde şekillendirirken, kendileriyle başbaşa
+                                    kalacaklar ve konsantre olarak kendi iş dünyalarında keşfe çıkacaklardır. Tecrübeli
+                                    ekibimiz ile çocukların kendi iş dünyalarıı keşfetmelerine katkı sağlıyoruz.</p>
                             </div>
                             <div class="uk-modal-footer uk-text-right">
-                                <button class="uk-button uk-button-default uk-modal-close ghost inmodalbutton" type="button">Vazgeç</button>
-                                <a href="#modal-group-2" class="uk-button uk-button-primary inmodalbutton" uk-toggle>Önceki</a>
-                                <a href="#modal-group-1" class="uk-button uk-button-primary inmodalbutton" uk-toggle>Başa Dön</a>
+                                <button class="uk-button uk-button-default uk-modal-close ghost inmodalbutton"
+                                    type="button">Vazgeç</button>
+                                <a href="#modal-group-2" class="uk-button uk-button-primary inmodalbutton"
+                                    uk-toggle>Önceki</a>
+                                <a href="#modal-group-1" class="uk-button uk-button-primary inmodalbutton"
+                                    uk-toggle>Başa Dön</a>
                             </div>
                         </div>
                     </div>
@@ -197,21 +239,24 @@
         <!--Tab & Switcher-->
         <section class="uk-section eb-pad section-background-color">
             <div class="uk-container">
-                <div class="uk-margin-medium-top">
-                    <ul class="uk-flex-center" uk-tab>
+                <div class="uk-margin-medium-top"
+                    uk-scrollspy="target: > ul; cls: uk-animation-fade; delay: 500; repeat: true;">
+                    <ul class="uk-flex-center" uk-tab uk-scrollspy-class="uk-animation-slide-left">
                         <li class="uk-active font-weight-600t"><a href="#">KURABİYE</a></li>
                         <li class="font-weight-600"><a href="#">SANAT ATÖLYESİ</a></li>
                         <li class="font-weight-600"><a href="#">TURNUVALAR</a></li>
                     </ul>
 
-                    <ul class="uk-switcher uk-margin">
+                    <ul class="uk-switcher uk-margin" uk-scrollspy-class="uk-animation-slide-right">
                         <li>
                             <div class="uk-card uk-text-center">
                                 <div class="uk-card-media-top">
                                     <img src="./assets/images/image10.png" alt="">
                                 </div>
-                                <h3 class="uk-card-title title-prop">Kurabiye, pizza, tuzlu hamur, barbekü, ekmek yapımı:</h3>
-                                <p class="card-text-prop">Çocukların el becerileri ve hayal gücünü şekillere yansıtmasını amaçlıyoruz.</p>
+                                <h3 class="uk-card-title title-prop">Kurabiye, pizza, tuzlu hamur, barbekü, ekmek
+                                    yapımı:</h3>
+                                <p class="card-text-prop">Çocukların el becerileri ve hayal gücünü şekillere
+                                    yansıtmasını amaçlıyoruz.</p>
                             </div>
                         </li>
                         <li>
@@ -220,7 +265,10 @@
                                     <img src="./assets/images/image11.png" alt="">
                                 </div>
                                 <h3 class="uk-card-title title-prop">Sanat Atölyesi</h3>
-                                <p class="card-text-prop">Çocukların kendilerini ifade edebilme becerisini geliştirirken aynı zamanda hayal etme ve bu hayali somut şekilde ifade edebilme, özgüven, ince motor, odaklanma, yaratıcı düşünebilme gibi becerilerini de geliştirmesine yardımcı oluyoruz. </p>
+                                <p class="card-text-prop">Çocukların kendilerini ifade edebilme becerisini geliştirirken
+                                    aynı zamanda hayal etme ve bu hayali somut şekilde ifade edebilme, özgüven, ince
+                                    motor, odaklanma, yaratıcı düşünebilme gibi becerilerini de geliştirmesine yardımcı
+                                    oluyoruz. </p>
                             </div>
                         </li>
                         <li>
@@ -229,34 +277,39 @@
                                     <img src="./assets/images/image12.png" alt="">
                                 </div>
                                 <h3 class="uk-card-title title-prop">Turnuva</h3>
-                                <p class="card-text-prop">Oyun, çocuğun zihinsel, bedensel ve sosyal gelişimini hızlandıran en önemli faaliyetlerden birisidir. Turnuvalar düzenleyerek katkı sağlamaya çalışıyoruz.</p>
+                                <p class="card-text-prop">Oyun, çocuğun zihinsel, bedensel ve sosyal gelişimini
+                                    hızlandıran en önemli faaliyetlerden birisidir. Turnuvalar düzenleyerek katkı
+                                    sağlamaya çalışıyoruz.</p>
                             </div>
-                        </li>                    
+                        </li>
                     </ul>
-                </div>        
+                </div>
             </div>
-            
-                       
+
+
         </section>
-        
+
         <!--Off-Canvas-->
         <section class="uk-section">
             <div class="uk-container">
                 <div class="uk-grid-small uk-child-width-1-6@m uk-text-center uk-flex uk-flex-center" uk-grid>
-                    <button class="uk-button uk-button-default uk-margin-small-left ofc-button" type="button" uk-toggle="target: #offcanvas-usage">Off Canvas</button>
+                    <button class="uk-button uk-button-default uk-margin-small-left ofc-button" type="button"
+                        uk-toggle="target: #offcanvas-usage">Off Canvas</button>
 
-                        <div id="offcanvas-usage" uk-offcanvas>
-                            <div class="uk-offcanvas-bar">
+                    <div id="offcanvas-usage" uk-offcanvas>
+                        <div class="uk-offcanvas-bar">
 
-                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-                                <h3>Title</h3>
+                            <h3>Title</h3>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                            </div>
                         </div>
-                </div>                                 
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -264,35 +317,36 @@
         <section class="uk-section section-background-color">
             <div class="uk-container uk-flex uk-flex-center">
                 <div uk-lightbox>
-                    <a class="uk-button uk-button-default" href="/assets/images/image7.jpg" data-caption="Caption">Open Lightbox</a>
+                    <a class="uk-button uk-button-default" href="/assets/images/image7.jpg"
+                        data-caption="Mükemmel Bir Manzara">Open Lightbox</a>
                 </div>
             </div>
         </section>
 
         <!--Background İmage-->
         <section class="uk-position-relative uk-overflow-hidden" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);">
-            <img data-srcset="/assets/images/image13.jpg" alt="background-img" class="uk-width-1-1" uk-img>
+            <img data-srcset="/assets/images/image13.jpg, /assets/images/image14.jpg 750w" alt="background-img" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);" uk-img>
             <div class="uk-position-cover">
-                <div class="uk-container uk-height-1-1 uk-flex uk-flex-middle">
-                    <div class="uk-width-1-2@m uk-light">
+                <div class="uk-container uk-container-xlarge uk-height-1-1">
+                    <div class="uk-grid uk-grid-medium uk-child-width-1-2@m uk-height-1-1 uk-flex uk-flex-middle uk-flex-left uk-light">
                         <div>
-                            <h1>ENES BAKADUR</h1>
-                        </div>
-                        <div>
-                            <h4>Front-End Developer</h4>
+                            <h1 class="uk-margin-remove uk-text-bold">ENES BAKADUR</h1>
+                            <h3 class="uk-margin-remove">Front-End</h3>
                         </div>
                     </div>
-                </div>
+                    
             </div>
         </section>
 
         <!--Parallax-->
         <section class="uk-section"></section>
         <section>
-            <div class="uk-height-large uk-background-cover uk-flex uk-flex-top" uk-parallax="bgy: -200; viewport: 0.5" style="background-image: url(/assets/images/image8.jpg);">
+            <div class="uk-height-large uk-background-cover uk-flex uk-flex-top" uk-parallax="bgy: -200; viewport: 0.5"
+                style="background-image: url(/assets/images/image8.jpg);">
 
-                <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Clockwork</h1>
-            
+                <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical"
+                    uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Clockwork</h1>
+
             </div>
         </section>
 
@@ -302,23 +356,26 @@
                 <div class="uk-grid-collapse" uk-grid>
                     <div class="uk-width-1-1 uk-child-width-1-2@m uk-flex uk-flex-middle about-us-div-padding">
                         <div class="uk-width-5-6@m">
-                            <h1 class="uk-margin-remove">ABOUT US</h1>
+                            <h1 class="uk-margin-remove uk-text-bold">ABOUT US</h1>
                         </div>
                         <div class="uk-text-right uk-width-1-6@m">
-                                <p class="uk-margin-remove"> <strong>PRETIUM</strong> MALESUADA CRAS QUISQUE</p>
-                        </div>  
+                            <p class="uk-margin-remove"> <strong>PRETIUM</strong> MALESUADA CRAS QUISQUE</p>
+                        </div>
                     </div>
                 </div>
                 <div class="uk-grid-stack uk-grid-collapse" uk-grid>
-                    <div class="uk-width-1-1 uk-flex uk-flex-last ">
+                    <div class="uk-width-1-1 uk-flex uk-flex-wrap">
                         <div class="uk-width-5-6@m">
                             <img src="/assets/images/image13.jpg" alt="img" uk-img>
                         </div>
                         <div class="uk-width-1-6@m uk-flex uk-flex-middle uk-width-1-1@s">
-                            <div class="uk-tile uk-tile-default uk-text-right uk-box-shadow-large uk-border-rounded uk-flex-middle" style="margin-left: -200px;">
+                            <div
+                                class="uk-tile uk-tile-default uk-text-right uk-box-shadow-large uk-border-rounded uk-flex-middle tile-prop">
                                 <h3 class="uk-text-bold">PASSIFIC HOUSE</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque eum repellat accusantium blanditiis hic rem possimus itaque excepturi laudantium!</p>
-                                <a href="#" class="uk-link-reset uk-text-bold">More <span uk-icon="arrow-right"></span></a>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam neque eum repellat
+                                    accusantium blanditiis hic rem possimus itaque excepturi laudantium!</p>
+                                <a href="#" class="uk-link-reset uk-text-bold">More <span
+                                        uk-icon="arrow-right"></span></a>
                             </div>
                         </div>
 
@@ -329,44 +386,53 @@
         </section>
 
         <!--Slider & Parallax-->
-        <section class="uk-section uk-overflow-auto">
-            <div class="uk-container">
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay:false; autoplay-interval:3000; center:true;">
-                    <div uk-scrollspy="cls: uk-animation-fade; repeat: true; delay:150;">
-                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
-                            <li>
-                                <div class="uk-panel" uk-slider-parallax="opacity: 0.5,1,0.5; scale: 0.1,1,0.1;">
-                                    <img src="/assets/images/image1.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel" uk-slider-parallax="opacity: 0.5,1,0.5; scale: 0.1,1,0.1;">
-                                    <img src="/assets/images/image1.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel" uk-slider-parallax="opacity: 0.5,1,0.5; scale: 0.1,1,0.1;">
-                                    <img src="/assets/images/image1.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel" uk-slider-parallax="opacity: 0.5,1,0.5; scale: 0.1,1,0.1;">
-                                    <img src="/assets/images/image1.jpg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="uk-panel" uk-slider-parallax="opacity: 0.5,1,0.5; scale: 0.1,1,0.1;">
-                                    <img src="/assets/images/image1.jpg" alt="">
-                                </div>
-                            </li>
-                        </ul>
-                    
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        <section class="uk-section">
+            <div class="uk-container uk-overflow-hidden">
+                <div class="uk-grid uk-grid-large uk-grid-collapse uk-width-1-1" uk-grid>
+                    <div class="uk-position-relative uk-width-1-1 uk-slider-container uk-margin-auto"
+                        style="overflow: visible;" tabindex="-1"
+                        uk-slider="autoplay:false; autoplay-interval:3000; center:true;">
+                        <div class="uk-grid-collapse uk-width-1-1" uk-grid>
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-2@m parallax-img-margin">
+                                <li class="uk-padding-remove">
+                                    <div class="uk-panel" uk-slider-parallax="scale: 0.7,1,0.7;">
+                                        <img src="/assets/images/image1.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li class="uk-padding-remove">
+                                    <div class="uk-panel" uk-slider-parallax="scale: 0.7,1,0.7;">
+                                        <img src="/assets/images/image1.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li class="uk-padding-remove">
+                                    <div class="uk-panel" uk-slider-parallax="scale: 0.7,1,0.7;">
+                                        <img src="/assets/images/image1.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li class="uk-padding-remove">
+                                    <div class="uk-panel" uk-slider-parallax="scale: 0.7,1,0.7;">
+                                        <img src="/assets/images/image1.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li class="uk-padding-remove">
+                                    <div class="uk-panel" uk-slider-parallax="scale: 0.7,1,0.7;">
+                                        <img src="/assets/images/image1.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li class="uk-padding-remove">
+                                    <div class="uk-panel" uk-slider-parallax="scale: 0.7,1,0.7;">
+                                        <img src="/assets/images/image1.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                                uk-slidenav-next uk-slider-item="next"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!--Filters-->
@@ -382,29 +448,38 @@
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [data-gender='male']; group: data-gender"><a href="#">Erkek</a></li>
-                                <li uk-filter-control="filter: [data-gender='female']; group: data-gender"><a href="#">Kadın</a></li>
+                                <li uk-filter-control="filter: [data-gender='male']; group: data-gender"><a
+                                        href="#">Erkek</a></li>
+                                <li uk-filter-control="filter: [data-gender='female']; group: data-gender"><a
+                                        href="#">Kadın</a></li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [data-weight='fat'];  group: data-weight"><a href="#">Şişman</a></li>
-                                <li uk-filter-control="filter: [data-weight='underweight']; group: data-weight"><a href="#">Zayıf</a></li>
+                                <li uk-filter-control="filter: [data-weight='fat'];  group: data-weight"><a
+                                        href="#">Şişman</a></li>
+                                <li uk-filter-control="filter: [data-weight='underweight']; group: data-weight"><a
+                                        href="#">Zayıf</a></li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [data-happiness='happy']; group: data-type"><a href="#">Mutlu</a></li>
-                                <li uk-filter-control="filter: [data-happiness='sad']; group: data-type"><a href="#">Mutsuz</a></li>
+                                <li uk-filter-control="filter: [data-happiness='happy']; group: data-type"><a
+                                        href="#">Mutlu</a></li>
+                                <li uk-filter-control="filter: [data-happiness='sad']; group: data-type"><a
+                                        href="#">Mutsuz</a></li>
                             </ul>
                         </div>
                     </div>
-                
-                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
+
+                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center"
+                        uk-grid="masonry: true">
                         <li data-gender="male" data-weight="fat" data-happiness="happy">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Peter Griffin</h3>
@@ -414,7 +489,9 @@
                         <li data-gender="male" data-weight="underweight" data-happiness="sad">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://static.wikia.nocookie.net/simpsons/images/5/5f/Carter_Pewterschmidt-0.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://static.wikia.nocookie.net/simpsons/images/5/5f/Carter_Pewterschmidt-0.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Carter Pewterschmidt</h3>
@@ -424,7 +501,9 @@
                         <li data-gender="male" data-weight="fat" data-happiness="sad">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://static.wikia.nocookie.net/familyguyfanon/images/8/8b/Dr._Hartman.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://static.wikia.nocookie.net/familyguyfanon/images/8/8b/Dr._Hartman.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Dr. Hartman</h3>
@@ -434,7 +513,9 @@
                         <li data-gender="male" data-weight="underweight" data-happiness="happy">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://wikiimg.tojsiabtv.com/wikipedia/en/f/fe/Glenn_Quagmire.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://wikiimg.tojsiabtv.com/wikipedia/en/f/fe/Glenn_Quagmire.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Glenn Quagmire</h3>
@@ -444,7 +525,9 @@
                         <li data-gender="female" data-weight="fat" data-happiness="happy">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://static.wikia.nocookie.net/villains/images/b/bc/Donna_Tubbs-Brown.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://static.wikia.nocookie.net/villains/images/b/bc/Donna_Tubbs-Brown.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Donna Tubbs-Brown</h3>
@@ -454,7 +537,9 @@
                         <li data-gender="female" data-weight="fat" data-happiness="sad">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://familyguyaddicts.files.wordpress.com/2015/07/loretta-young-ghost.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://familyguyaddicts.files.wordpress.com/2015/07/loretta-young-ghost.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Loretta Brown</h3>
@@ -464,7 +549,9 @@
                         <li data-gender="female" data-weight="underweight" data-happiness="happy">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://wikiimg.tojsiabtv.com/wikipedia/en/a/a5/Lois_Griffin.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://wikiimg.tojsiabtv.com/wikipedia/en/a/a5/Lois_Griffin.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Lois Griffin</h3>
@@ -474,7 +561,9 @@
                         <li data-gender="female" data-weight="underweight" data-happiness="sad">
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top" style="height: 250px;">
-                                    <img class="uk-height-1-1" data-src="https://www.pngkit.com/png/full/496-4965329_tricia-takanawa-is-beauty-asian-news-reporter-family.png" alt="" uk-img>
+                                    <img class="uk-height-1-1"
+                                        data-src="https://www.pngkit.com/png/full/496-4965329_tricia-takanawa-is-beauty-asian-news-reporter-family.png"
+                                        alt="" uk-img>
                                 </div>
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title uk-text-bold">Tricia Takanawa</h3>
@@ -482,12 +571,12 @@
                             </div>
                         </li>
                     </ul>
-                
+
                 </div>
             </div>
-            
+
         </section>
-        
+
     </main>
     <footer>
 

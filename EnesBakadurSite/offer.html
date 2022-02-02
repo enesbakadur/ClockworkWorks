@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enes Bakadur</title>
+    <title>Teklif Al</title>
     <link rel="stylesheet" href="uikit/dist/css/uikit.custom-theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,31 +82,47 @@
         <section class="uk-position-relative uk-overflow-hidden" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);">
             <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);" uk-img>
             <div class="uk-position-cover">
-                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large container-extra-padding uk-flex uk-flex-middle uk-flex-center uk-visible@m">
-                        <div class="uk-width-1-2@m uk-light uk-text-right uk-padding-large">
-                            <h3 class="home-item-margin-padding">Hoş geldin! Ben,</h3> 
-                            <h1 class="uk-text-bold home-item-margin-padding gradient-text-background">ENES BAKADUR</h1>
-                            <h3 class="home-item-margin-padding">Front-End Developer, Grafik Tasarımcı</h3>
-                            <div class="offer-button-padding">
-                                <a href="offer.html" class="uk-button uk-button-default uk-text-bold offer-button gradient-button-background">TEKLİF AL</a>
+                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large container-extra-padding uk-flex uk-flex-middle uk-flex-center">
+                    <form class="uk-form-stacked uk-width-1-2@m">
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Ad Soyad*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="Adınızı ve soyadınızı girin">
                             </div>
-                            
                         </div>
-                        <div class="uk-width-1-2@m uk-visible@m uk-padding-large enesbakadur-img-padding uk-flex uk-flex-middle">
-                                    <img src="/assets/images/enesbakadur.png" alt="enesbakadur">
-                        </div>
-                </div>
                     
-                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large uk-flex uk-flex-middle uk-hidden@m">
-                    <div class="uk-width-1-2@m uk-light uk-text-center uk-padding-large">
-                        <h3 class="home-item-margin-padding">Hoş geldin! Ben,</h3> 
-                        <h1 class="uk-text-bold home-item-margin-padding gradient-text-background">ENES BAKADUR</h1>
-                        <h3 class="home-item-margin-padding">Front-End Developer, Grafik Tasarımcı</h3>
-                        <div class="offer-button-padding">
-                            <a href="offer.html" class="uk-button uk-button-default uk-text-bold offer-button gradient-button-background">TEKLİF AL</a>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-select">Konu*</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="form-stacked-select">
+                                    <option>Grafik Tasarım (Logo, kartvizit, kurumsal kimlik vb.</option>
+                                    <option>Front-End Çalışması</option>
+                                    <option>Diğer</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                </div>
+
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Açıklama*</label>
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" rows="5" placeholder="İsteğinizle ilgili detaylı açıklama girin"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin" uk-margin>
+                            <label class="uk-form-label" for="form-stacked-select">Dosya Ekle (Tercihe Bağlı)</label>
+                            <div class="uk-width-1-1" uk-form-custom="target: true">
+                                <span class="uk-form-icon" uk-icon="icon: folder"></span>
+                                <input type="file">
+                                <input class="uk-input" type="text" placeholder="Dosya Seç" active>
+                            </div>
+                        </div>
+                        <div class="uk-margin-medium" uk-margin>
+                            <button class="uk-button form-button uk-text-bold uk-width-expand@m">TEKLİF AL</button>
+                        </div>
+                    </form>
+                    
             </div>
         </section>
 
