@@ -2433,8 +2433,11 @@ select.uk-form-width-xsmall {
   margin-top: -80px;
   width: 80%;
 }
-.parallax-img-margin > li {
-  margin-left: -100px !important;
+.parallax-img-margin > li.uk-active {
+  margin-left: -40px !important;
+  margin-right: -40px !important;
+  z-index: 1;
+  position: relative;
 }
 .form-submit {
   background-color: #efefef;

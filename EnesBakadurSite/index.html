@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header uk-sticky="animation: uk-animation-slide-top; top: 100px; sel-target: .target; cls-active: navbar-animation-background uk-navbar-sticky; cls-inactive: uk-light" class="uk-sticky">
+    <header uk-sticky="top: 0;">
         <div class="target uk-position-top uk-position-z-index active-navbar-background">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
@@ -79,8 +79,8 @@
     </header>
     <main>
 
-        <section class="uk-position-relative uk-overflow-hidden" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);">
-            <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);" uk-img>
+        <section class="uk-position-relative uk-cover-container uk-overflow-hidden" uk-height-viewport="offset-top:true;">
+            <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-cover uk-img>
             <div class="uk-position-cover">
                 <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large container-extra-padding uk-flex uk-flex-middle uk-flex-center uk-visible@m">
                         <div class="uk-width-1-2@m uk-light uk-text-right uk-padding-large">
