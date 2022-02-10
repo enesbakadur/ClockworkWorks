@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header uk-sticky="animation: uk-animation-slide-top; top: 100px; sel-target: .target; cls-active: navbar-animation-background uk-navbar-sticky; cls-inactive: uk-light" class="uk-sticky">
+    <header uk-sticky="top: 0;">
         <div class="target uk-position-top uk-position-z-index active-navbar-background">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
@@ -21,7 +21,7 @@
             
                     <ul class="uk-navbar-nav">
                         <li>
-                            <a href="index.html" class="enesbakadur-font-size uk-text-bold uk-visible@m gradient-text-background">ENES BAKADUR</a>
+                            <a href="index.html" class="enesbakadur-font-size uk-text-bold uk-visible@m gradient-text-background enesbakadur-size">ENES BAKADUR</a>
                         </li>
                         <li class="uk-hidden@m">
                             <a class="uk-navbar-toggle  navbar-special-padding" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-nav-primary"></a>
@@ -79,24 +79,25 @@
     </header>
     <main>
 
-        <section class="uk-position-relative uk-overflow-hidden" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);">
-            <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-height-viewport="offset-top:true;" style="max-height: calc(100vh);" uk-img>
-            <div class="uk-position-cover">
-                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-padding-large container-extra-padding uk-flex uk-flex-middle uk-flex-center">
+        <section class="uk-position-relative uk-overflow-hidden" uk-height-viewport="offset-top:true;">
+            <img data-srcset="/assets/images/background-image.png" alt="background-img" class="uk-width-1-1" uk-cover uk-img>
+            <div class="uk-position-cover" style="height: calc(100vh - 90px); top: unset;">
+                <div class="uk-container uk-container-xlarge uk-height-1-1 uk-flex uk-flex-middle uk-flex-center">
                     <form class="uk-form-stacked uk-width-1-2@m">
 
                         <div class="uk-margin">
                             <label class="uk-form-label" for="form-stacked-text">Ad Soyad*</label>
                             <div class="uk-form-controls">
-                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="Adınızı ve soyadınızı girin">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="Adınızı ve soyadınızı girin" required>
                             </div>
                         </div>
                     
                         <div class="uk-margin">
                             <label class="uk-form-label" for="form-stacked-select">Konu*</label>
                             <div class="uk-form-controls">
-                                <select class="uk-select" id="form-stacked-select">
+                                <select class="uk-select" id="form-stacked-select" required>
                                     <option>Grafik Tasarım (Logo, kartvizit, kurumsal kimlik vb.</option>
+                                    <option>UI Çalışması</option>
                                     <option>Front-End Çalışması</option>
                                     <option>Diğer</option>
                                 </select>
@@ -106,7 +107,7 @@
                         <div class="uk-margin">
                             <label class="uk-form-label" for="form-stacked-text">Açıklama*</label>
                             <div class="uk-margin">
-                                <textarea class="uk-textarea" rows="5" placeholder="İsteğinizle ilgili detaylı açıklama girin"></textarea>
+                                <textarea class="uk-textarea" rows="5" placeholder="İsteğinizle ilgili detaylı açıklama girin" required></textarea>
                             </div>
                         </div>
 
